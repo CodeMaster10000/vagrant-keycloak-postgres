@@ -14,8 +14,8 @@ The Virtual Machines are based on Ubuntu 22.04
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Keycloak-Postgres-Vagrant.git
-cd Keycloak-Postgres-Vagrant
+git clone https://github.com/CodeMaster10000/vagrant-keycloak-postgres.git
+cd vagrant-keycloak-postgres
 
 ```
 ### 2. Execute the download-large-files.ps1 script

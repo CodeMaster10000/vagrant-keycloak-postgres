@@ -21,6 +21,13 @@ sudo chmod 777 -R /opt/keycloak
 
 sudo systemctl enable keycloak
 sudo systemctl start keycloak
+
+# Importing properties and restarting keycloak
+sudo systemctl stop keycloak
+
+# sudo bash /opt/keycloak/bin/kc.sh import --file /vagrant/provision/keycloak/common/data/keycloak-import-data.json
+
+sudo systemctl restart keycloak
 sudo systemctl status keycloak
 
 echo -e "${ORANGE}Keycloak provisioning ${GREEN}DONE${ORANGE}!!!${NC}"
